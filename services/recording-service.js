@@ -6,7 +6,7 @@ async function recordingService(ttsService, callSid) {
     if (process.env.RECORDING_ENABLED === 'true') {
       const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
       
-      ttsService.generate({partialResponseIndex: null, partialResponse: 'This call will be recorded.'}, 0);
+      ttsService.generate({partialResponseIndex: null, partialResponse: 'Your call may be recorded to help us serve you better.'}, 0);
       const recording = await client.calls(callSid)
         .recordings
         .create({
