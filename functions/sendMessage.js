@@ -39,7 +39,7 @@ const sendMessage = async ({ callMessage }) => {
     .send({
       to: process.env.RECIPIENT_EMAIL,
       from: process.env.SENDER_EMAIL,
-      subject: 'New Message from Caller',
+      subject: 'Shaniqua Darmain: New Message from Caller',
       text: messageBody,
     })
     .then(() => {
