@@ -80,7 +80,7 @@ app.ws('/connection', (ws) => {
           console.log(`Twilio -> Starting Media Stream for ${streamSid}`.underline.red);
           ttsService.generate({
             partialResponseIndex: null,
-            partialResponse: 'Welcome • you’ve reached Megabyte Labs • the open-source studio and personal brand of Brian Zalewski. • I’m Brian’s AI assistant • here to take your message or connect you directly • whatever works best for you.'
+            partialResponse: 'Hey there! • You’ve reached Brian Zalewski’s personal AI assistant • Shaniqua Darmain • I help with messages, scheduling, and connecting calls. • Would you like to leave a quick message and get a call back • or speak with Brian directly?'
           }, 0);
         });
       } else if (msg.event === 'media') {
