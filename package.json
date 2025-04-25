@@ -11,7 +11,7 @@
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "Charlie Weems",
+  "author": "Charlie Weems McGee XII",
   "license": "MIT",
   "dependencies": {
     "@deepgram/sdk": "^3.3.4",
