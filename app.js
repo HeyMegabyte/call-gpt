@@ -51,7 +51,7 @@ app.ws('/connection', (ws) => {
     const timeoutWarn = setTimeout(() => {
       ttsService.generate({
         partialResponseIndex: null,
-        partialResponse: 'Just a heads-up • this call will end in 30 seconds • to keep things short and sweet.'
+        partialResponse: 'Just a heads-up. This call will end in 30 seconds. To keep things short and sweet.'
       }, 999);
     }, warnBeforeEnd);
 
@@ -80,7 +80,7 @@ app.ws('/connection', (ws) => {
           console.log(`Twilio -> Starting Media Stream for ${streamSid}`.underline.red);
           ttsService.generate({
             partialResponseIndex: null,
-            partialResponse: 'Hey there! • You’ve reached Brian Zalewski’s AI assistant • Shaniqua Darmain • I help with messages, scheduling, and connecting calls. • Would you like to leave a quick message and get a call back • or speak with Brian directly?'
+            partialResponse: 'Howdy partner! You’ve reached Brian’s AI assistant, Dallas. I help with messages, scheduling, and connecting calls. Would you like to leave a quick message and get a call back or speak with Brian directly?'
           }, 0);
         });
       } else if (msg.event === 'media') {
