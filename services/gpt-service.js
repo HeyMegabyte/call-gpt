@@ -30,7 +30,7 @@ this.userContext = [
   },
   {
     role: 'assistant',
-    content: `Hey there! • You have reached Megabyte Labs, a company by Brian. • Want to leave a message for a call back • or talk to Brian now?`
+    content: `Hey there! You have reached Megabyte Labs, a company by Brian. Want to leave a message for a call back or talk to Brian now?`
   }
 ];
     this.partialResponseIndex = 0;
